@@ -1,0 +1,126 @@
+*
+{
+  margin: 0;
+  padding: 0;
+
+}
+body 
+{
+font-family: GE Inspira Sans Regular,Helvetica,sans-serif;
+margin: 0;
+/* font-size: 10px; */
+}
+.nav-logo img
+{
+  margin-right: 200px;
+  margin-top: 4px;
+  height: 60px;
+  width: 60px;
+  margin-left: 3%;
+
+  
+  /* width: auto; */
+  /* margin-left: 9px;
+  margin-top: 10px; */
+}
+img
+{
+  margin-left: 4%;
+  border-style: none;
+}
+header
+{
+  padding-left: 20px;
+  width: 100%;
+  display: flex;
+  background-color: #0c2340;
+  height: 110px;
+  display: flex;
+  align-items: center;
+ 
+}
+.nav-links
+{
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+.nav-links a
+{
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  margin-left: 60px;
+  margin-right: 20px;
+  /* justify-content: space-between; */
+  /* display: flex; */
+  
+}
+.nav-button
+{
+  
+  line-height: 1;
+  width: 200px;
+  height: 40px;
+  /* padding: 0px; */
+  color: #0d1623;
+  font-weight: 770;
+  background-color: #59cbe8;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border-radius: 4rem;
+  font-size: 10px;
+}
+.nav-button:hover
+{
+  background-color: white;
+} 
+nav-links button
+{
+  /* display: flex; */
+}
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+} */
+
+.icon svg {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.main-image
+{
+  background: url(idd-web-banner.webp);
+  height: 600px;
+  background-size: cover;
+  /* width: 1000px; */
+}
+.vertical-line {
+  width: 1px; /* Adjust the width as needed */
+  height: 05vh; 
+  background-color: rgb(255, 255, 255); /* Sets the color of the line */
+}
+.nav-text p
+{
+  margin-left: 10px;
+color: white;
+font-size: 25px;
+font-weight: 500px;
+}
+.main-image1
+{
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  bottom: 1px;
+  left: 197px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,619 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: GE Inspira Sans Regular,Helvetica,sans-serif;
+  box-sizing: border-box;
+}
+/* ------------------------------------ header style ----------------------------------------- */
+header
+{
+  height: 15vh;
+  width: 100%;
+  background-color: #0c2340;
+  opacity: 0.99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+
+}
+.logo-container{
+  height: 15vh;
+  width: 7.5vw;
+  display: flex;
+  margin-top: none;
+  /* border: 2px solid red; */
+}
+.nav-bar{
+  margin: 2%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar a{
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar a:hover{
+  transition: 150ms;
+  color: rgb(51, 180, 223);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.login-box{
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5%;
+}
+.login-box .login-btn{
+  height: 5vh;
+  min-width: 10vw;
+  text-decoration: none;
+  font-weight: 900;
+  color: #0d1623;
+  border: none;
+  border-radius: 20px;
+  background-color: #59cbe8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-box .login-btn:hover
+{
+  transition: 200ms;
+  background-color: white;
+  cursor: pointer; 
+}
+.login-box .vertical-line{
+  border: 2px solid white;
+  border-radius: 8px;
+}
+.login-box .VertasX p{
+  font-size: x-large;
+  font-weight: bolder;
+}
+.login-box .VertasX a{
+  text-decoration: none;
+  color: white;
+}
+
+/* --------------------------- footer style ------------------------------ */
+footer{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+.info-bar{
+  width: 100%;
+  margin: 0%;
+  height: 60%;
+  background-color: #093366;
+  opacity: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.info-bar img{
+  height: 70%;
+  width: 5%;
+  margin: 1%;
+}
+.info-bar p{
+  margin: 0%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.ref-links{
+  height:50%;
+  background-color: #0c2340;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ref-links a{
+  text-decoration: none;
+  color: white;
+}
+.ref-links a:hover{
+  transition: 150ms;
+  font-size: large;
+  color: rgb(31, 233, 240);
+  cursor: pointer;
+}
+.footer-description
+{
+  color: white;
+  padding-right: 8.4rem;
+  line-height: 1.5;
+  width: 20%;
+  font-size: 1.2rem;
+  padding-right: 20px;
+  padding-bottom: 30px; 
+}
+main{
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+/* homepage  style */
+
+.hero-image 
+{
+  margin-top: 0;
+  background: url(PMS\(13\).jpg);
+  height: 600px;
+  background-size: cover;
+}
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  font-family: "Anton", sans-serif;
+  color: rgb(255, 104, 10);
+  font-weight:400 ;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.vertical-line {
+  width: 1px; /* Adjust the width as needed */
+  height: 05vh; 
+  background-color: rgb(255, 255, 255); /* Sets the color of the line */
+}
+.VertasX
+{
+  color: white;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+.PMS-text
+{
+  background-color: aliceblue;
+  color: black;
+  margin: 110px;
+  line-height: 30px;
+  font-family:  "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+.PMS-text img
+{
+  background-image: url(screenshot-apm-strategy-strat-manager-laptop-1792x1280.webp);
+  float: right;
+
+}
+.heading1
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 40px;
+  margin-left:30px;
+}
+.heading-text
+{
+  margin: 30px;
+}
+.heading2
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 65px;
+  margin-bottom: 20px;
+}
+  hr {
+    border: none;
+    border-top: 3px solid rgb(34, 115, 228); /* Change color and thickness as needed */
+    width: 4%; /* Adjust width as needed */
+    margin-left: 104px ;
+}
+.result
+{
+  margin-bottom: 1%;
+  margin-top: 20px;
+  margin-left:60px;
+  height: 275px;
+  width: 275px;
+  background-color: #2250ad;
+  display: inline-block; 
+  box-sizing: border-box; 
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 1;
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  row-gap: 10px; */
+  /* position: relative; */
+  /* position:absolute; */
+  
+}
+
+/* .result:hover
+{
+
+} */
+.result-text-1
+{
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 2.7em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* display: flex;
+  flex-direction: row; */
+  /* padding: 30px; */
+}
+.result-text-2
+{
+  color: white;
+  /* margin: 40px; */
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* padding: 30px; */
+}
+.container{
+  margin-left: 2%;
+}
+/* .feature-component
+{
+  background-color: #f1f3f5;
+  width: 1500px;
+  height:800px;
+  margin-top: 30px;
+  /* padding: 32px 0 87px; */
+  /* padding-top: 3.2rem; */
+/* } */
+/* .features-title
+{
+  text-align: center;
+/* } */ 
+
+.horizontal-line {
+  width: 1px; /* Adjust the width as needed */
+  height: 05vw; 
+  background-color: rgb(255, 255, 255); /* Sets the color of the line */
+}
+.center-hor {
+  border: none;
+  background-color: rgb(34, 115, 228); /* Change color as needed */
+  height: 2px;
+  width: 04%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the line horizontally */
+}
+/* hr {
+  border: none;
+  border-top: 3px solid rgb(18, 167, 230);
+  width: 4%;
+  margin-left: 104px;
+} */
+/* .feature-item
+{
+  height: 4.8rem;
+  width: 4.8rem;
+  
+}
+.feature-discription
+{
+padding-top: 1.8rem;
+line-height: 2.4rem;
+color: #8f9297;
+} */
+  /* overflow: hidden; */
+
+/* @media screen and (min-width: 1024px) and (max-width: 1439px)
+.n02-footer-new .footer-description {
+    padding-right: 8.4rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding-bottom: 16rem; */
+
+    
+/* element.style {
+}
+@media (min-width: 1024px)
+.n02-footer-new {
+    height: 47rem;
+}
+.n02-footer-new {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    background-color: #002e5d; */
+
+/* .card{
+    height: 340px;
+    width: 360px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    margin: 10px;
+}
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.front{
+    background: linear-gradient(#08aeea, #2af598);
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back{
+    background: linear-gradient(#f8da61, #ff5acd);
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.container:hover .card{
+    transform: rotateY(180deg);
+}
+
+.container{
+    perspective: 1000px;
+
+} */
+/* .card-header h3
+{
+  text-align: center;
+} */
+
+div.polaroid {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  
+  width: 60%;
+  height: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.87);
+  margin:100px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  /* background-color: dodgerblue; */
+}
+.heading3
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  
+
+}
+.main-box
+{
+  margin-left: 80px;
+}
+.key-points
+{
+  width: 30%;
+  margin-top: 80px;
+  color: white;
+  text-align: justify;
+}
+
+
+
+/* -------------------- login form --------------------------- */
+
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('idd-web-banner.webp');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container .logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo-container img {
+  width: 100px;
+  height: auto;
+}
+.form-container {
+  margin-top: 20px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.login-container .form-container p{
+  font-weight: 500;
+  text-align: center;
+}
+.form-container a{
+ text-decoration: none;
+ font-style: italic; 
+ color: red;
+ font-weight: bolder;
+
+}
+input[type="text"],
+input[type="password"],
+button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+}
+.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ----------------------------------- mysoftware style -------------------------------------- */
+.mysoft-body{
+  border: 1px solid red;
+  width: 100%;
+  height: 60vh;
+  background-image: url("../static/PMS\(14\).jpg");
+}
+/* .mysoft-body
+  {
+    width: 100%;
+    height: 70vh;
+    border: 2px solid red;
+    width: 100%; 
+    background-image: url("../static/PMS\(14\).jpg"); 
+    height: 70vh;
+    background-position: center center;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    margin: 0%; */
+  /* } */
+
+  /* Styling for the popup */
+  .popup {  
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+  }
+
+  /* Animation for blinking */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .blink {
+    animation: blink 1s infinite;
+  }
+
+  /* Positioning for popups */
+  #successPopup {
+    bottom : 120px;
+    left: 430px;
+    height: 100px;
+    width: 200px;
+    border-radius: 20%;
+    border: 2px dotted white;
+  }
+
+  #faultPopup {
+    bottom: 120px;
+    left: 140px;
+    width: 200px;
+    border-radius: 20%;
+    border: 2px dotted white;
+  }
+  .popup-1
+  {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .popup-2
+  {
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+  h1
+  {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px red;
+    position: relative;
+    bottom: 0;
+  }
+  .Current-Data
+  {
+    margin: 140px;
+  }
