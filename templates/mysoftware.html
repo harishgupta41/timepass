@@ -1,0 +1,124 @@
+{% extends "layout.html" %} {% block content %}
+<h1>Real-Time Data Display</h1>
+    <div id="graph"></div>
+
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('connect', function() {
+            console.log('Connected to Flask server');
+        });
+
+        socket.on('update_graph', function(data) {
+            console.log('Received sensor data:', data);
+            // Update your graph with the received data
+            // For example, update a chart using a JavaScript charting library
+        });
+    </script>
+
+<!-- <div class="mysoft-body"> 
+  <div class="Current-Data">
+    <h1>Current Data Status Result :-</h1>
+  </div> 
+  Popup message
+  <div class="popup blink" id="successPopup">
+    <p class="popup-1">Success</p>
+  </div>
+  <div class="popup blink" id="faultPopup">
+    <p class="popup-1">Fault Detected</p>
+  </div>
+</div>
+<div class="graph">
+  <canvas id="myChart" height="10" width="10" ></canvas>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+  let successPopup = document.getElementById('successPopup');
+  let faultPopup = document.getElementById('faultPopup');
+
+  successPopup.style.display = 'block';
+  faultPopup.style.display = 'block';
+});
+
+let currentPopup = 'success'; // Track the currently displayed popup
+
+// Function to toggle the popup between "Success" and "Fault Detected"
+function togglePopup() {
+  let successPopup = document.getElementById('successPopup');
+  let faultPopup = document.getElementById('faultPopup');
+
+  // Stop blinking for the current popup
+  if (currentPopup === 'success') {
+    successPopup.classList.remove('blink');
+  } else {
+    faultPopup.classList.remove('blink');
+  }
+
+  // Show the selected popup and start blinking
+  if (currentPopup === 'success') {
+    faultPopup.style.display = 'block';
+    faultPopup.classList.add('blink');
+    currentPopup = 'fault';
+  } else {
+    successPopup.style.display = 'block';
+    successPopup.classList.add('blink');
+    currentPopup = 'success';
+  }
+}
+
+// Event listener for the 'A' key to toggle between popups
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'a' || event.key === 'A') {
+    togglePopup();
+  }
+});
+
+
+
+
+   const ctx = document.getElementById('myChart').getContext('2d');
+    let myChart;
+
+    const initChart = (initialData) => {
+      myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          datasets: [{
+            label: 'CSV Data',
+            data: initialData,
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 2,
+            pointRadius: 0,
+            fill: false,
+            lineTension: 0.4, // Adjust the curve tension for an analog feel
+          }]
+        },
+        options: {
+          scales: {
+            x: {
+              type: 'linear',
+              position: 'bottom'
+            },
+            y: {
+              type: 'linear',
+              position: 'left'
+            }
+          }
+        }
+      });
+    };
+
+    const socket = io.connect('http://' + document.domain + ':' + location.port);
+
+    socket.on('initial_data', function (data) {
+      initChart(data.x_values.map((x, i) => ({ x, y: data.y_values[i] })));
+    });
+
+    socket.on('new_data', function (data) {
+      myChart.data.datasets[0].data.push({ x: data.x, y: data.y });
+      myChart.update();
+    });
+  </script> -->
+{% endblock %}

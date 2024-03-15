@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="body">
+  <div class="login-container">
+    <div class="logo-container">
+      <img src="../static/Veritas X.png" alt="Logo">
+    </div>
+    <div class="form-container">
+      <h2>Login</h2>
+      <form id="login-form" method="post">
+        <input type="text" name="username" id="username" placeholder="Username">
+        <input type="password" name="passwd" id="password" placeholder="Password">
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="{{url_for('registration')}}">Click Here</a> to get one!</p>
+      <div id="error-message" class="error-message"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

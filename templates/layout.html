@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+
+    {% if title %}
+    <title>Predictive Maintenance Software - {{title}}</title>
+    {% else %}
+    <title>Predictive Maintenance Software</title>
+    {% endif %}
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          <img src="../static/Veritas X.png" alt="veritasX">
+        </div>
+        <nav class="nav-bar">
+            <a href="{{url_for('mySoftware')}}">Software</a>
+            <a href="#">Services</a>
+            <a href="#">Industries</a>
+            <a href="#">Innovation</a>    
+        </nav>
+        <div class="login-box">
+            <a class="login-btn" href="{{url_for('login')}}">LogIn</a>
+            <div class="vertical-line"></div>
+            <div class="VertasX">
+                <p><a href="{{url_for('home')}}">VERITAS X</a></p>
+            </div>
+        </div>
+      </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <div class="info-bar">
+          <img src="../static/Veritas X.png" alt="veritasX">
+          <p class="key-points">Predictive maintenance software is a key to industrial excellence. By leveraging data, analytics, and artificial intelligence, predictive maintenance software can help industrial businesses save money, time, and resources, while enhancing safety, reliability, and customer satisfaction. &#169;</p>
+        </div>
+        <div class="ref-links">
+            <a href="#">Partners</a>
+            <a href="#">Support</a>
+            <a href="#">About Us</a>
+        </div>
+    </footer>
+    <script src="../static/script.js"></script>
+</body>
+</html>
